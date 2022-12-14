@@ -1,1 +1,14 @@
-host: all
+---
+  - name: Gather Facts
+    host: 192.168.12.205
+    gather_facts: no
+
+    tasks:
+
+  - name: Gather IOS Facts
+    cisco.ios.ios.facts:
+
+  - name: View Facts
+    debug:
+      var: ansible_facts
+      
