@@ -1,5 +1,3 @@
----
-
 - name: Network Getting Started First Playbook with Cisco Devices
   connection: ansible.netcommon.network_cli
   gather_facts: false
